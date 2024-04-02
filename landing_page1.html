@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style type="text/css">
+        *{padding: 0;margin: 0; box-sizing: border-box;font-family: sans-serif;}
+        header{
+            width: 100%;
+            height: 100vh;
+            
+            background: url(images/pizza3.jpg.jpg);
+            background-size:100% 100%;
+            position: relative;
+        }
+        nav{
+            width: 100%;
+            height: 70px;
+            padding: 0px 70px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 2px 0px 5px brown;
+            
+        }
+        .logo{
+            font-weight: bold;
+            font: size 5em;
+            letter-spacing: 2px;
+            box-shadow: 5px 0px 2px brown;
+        }
+        .logo span{
+            color:brown;
+        }
+        .menu a{
+            text-decoration: none;
+            color:white;
+            padding: 10px 20px;
+        }
+        .menu a:last-child{
+            background-color: brown;
+            color: aliceblue;
+            border-radius: 8px;
+        }
+        .h-text{
+           position: absolute;
+           top: 30%;
+           left: 5%; 
+           padding: 15px;
+        }
+        .h-text p{
+            color:white ;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .h-text h1{
+            font-size: 4em;
+            line-height: 1.5em;
+            color: white;
+        }
+        .h-text h1 span{
+            color: brown;
+        }
+        .h-text h2{
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: white;
+        }
+        .h-text h2 span{
+            color: brown;
+        }
+        #order{
+            text-decoration:none ;
+            color: white;
+            background-color: #262626;
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+        #dis{
+            text-decoration:none ;
+            color: white;
+            background-color:brown;
+            border-radius: 8px;
+            padding: 10px 20px; 
+        }
+        .h-text p{
+            color: white;
+        }
+        footer {
+    
+            color: #0d0d0d;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        } 
+                 
+        #pizza{
+            position: absolute;
+            right:10%;
+            bottom: 15%;
+        } 
+        #pizza img{
+            transition: 0.5s ease;
+        }
+        #pizza img:hover{
+            transform: translateY(-20px);
+        }
+        #pizza p{
+            color: white;
+            
+        }
+        #slogan p{
+            position: absolute;
+            left: 60%;
+            bottom: 75%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <h1>
+                <div class="logo"><span>A1</span></span>PIZZA</div>
+                
+            </h1>
+
+        <div class="menu">
+            <a href ="#">Home</a>
+            <a href ="#">Menu</a>
+            <a href ="#">Offers</a>
+            <a href ="#">Your Oder & Takeway</a>
+            <a href ="#">Cart</a>
+        
+        </div>
+    </nav>
+    <div class ="h-text">
+        <p>Free Home Delivery on first Order</p>
+        <h1>Delicious Pi<span>zz</span>a</h1>
+        <h2><span>Offer</span> of theWeek</h2>
+        
+            <a href="#" id="order">Oreder Now!!</a>
+            <a href="#" id="dis">25% Off up to ₹100.</a>
+        
+    </div>
+    <div id="pizza">
+        <img src="images/pizza4.jpg" width="150">
+        <p>100% Veg</p>
+        <img src="images/pizza5.jpg" width="150">
+        <p>Extra loaded Veg & Cheese</p>
+        <img src="images/pepsi.jpg" width="150">
+        <p>475ml Pepsi Free  on order of Rs.150</p>
+        </div>
+    <div id="slogan">
+        <h2>
+            <p>Pure Taste, Pure Veg: Savor Every Bite!!</p>
+        </h2>
+    </div>
+<footer>
+<textarea name = "feedback" id = '101' placeholder="Please give your Feedback here!!"></textarea>
+<br>
+<input type="submit" value ="Submit">
+</footer>
+</header>
+</body>
+</html>
